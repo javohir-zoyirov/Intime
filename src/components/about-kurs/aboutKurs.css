@@ -1,0 +1,8 @@
+.nav {
+    background: url("../image/bg-kurs.png");
+    background-size: cover;
+    background-position: center;
+}
+.ant-menu-submenu-arrow {
+    color: white !important;
+  }

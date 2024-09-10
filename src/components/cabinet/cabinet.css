@@ -1,0 +1,13 @@
+.ant-radio-inner {
+    border-color: #E32652;
+  }
+  
+  .ant-radio-checked .ant-radio-inner {
+    border-color: #E32652;
+    background-color: #E32652;
+  }
+  
+  .ant-radio-inner::after {
+    background-color: #fff;
+  }
+  
