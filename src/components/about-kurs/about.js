@@ -2,23 +2,13 @@ import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
-  ToTopOutlined,
 } from "@ant-design/icons";
 import { Footer } from "../footer";
-import bgkurs from "../image/bg-kurs.png";
 import { Navbar } from "../navbar";
 import "./aboutKurs.css";
 import ReactPlayer from "react-player";
 import { useState } from "react";
 import { Flex, Menu, Progress, Rate } from "antd";
-import kutish1 from "../image/kutilayotgan1.png";
-import kutish2 from "../image/kutilayotgan2.png";
-import soon1 from "../image/soon1.png";
-import soon2 from "../image/soon2.png";
-import soon3 from "../image/soon3.png";
-import soon4 from "../image/soon4.png";
-import soon5 from "../image/soon5.png";
-import soon6 from "../image/soon6.png";
 import ommabop1 from "../image/ommabop1.png";
 import ommabop2 from "../image/ommabop2.png";
 import ommabop3 from "../image/ommabop3.png";
@@ -32,7 +22,7 @@ import yonalish6 from "../image/yo'nalish6.png";
 import carousel from "../image/carousel.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Carousel, Checkbox } from "antd";
-import { FreeMode, Navigation, Pagination } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 
 const items = [
   {
@@ -241,7 +231,7 @@ export const AboutKurs = () => {
             qilish va ifodalash uchun o'zining ajoyib ovozidan qanday
             foydalanishini bilib oling.
           </p>
-          <div className="d-flex align-items-center justify-content-center py-4 gap-5 text-white">
+          <div className="d-flex align-items-center justify-content-center py-5 gap-5 text-white">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -372,7 +362,7 @@ export const AboutKurs = () => {
   </div>
 
   <div
-    className="d-flex py-3"
+    className="d-flex mx-auto py-3"
     style={{ minWidth: "800px", gap: "300px", borderBottom: "1px solid #CFD1D4" }}
   >
     <p className="text-white p-0 m-0">Xususiyatlari</p>
@@ -645,11 +635,11 @@ export const AboutKurs = () => {
       </div> : <></>}
 
       <div className="d-flex align-items-end gap-4 mt-5 py-5">
-        <p style={{ fontSize: "64px", color: "#FFFFFF" }} className="p-0 m-0">
+        <p style={{ fontSize: "58px", color: "#FFFFFF" }} className="p-0 m-0">
           Ommabop
         </p>
         <p
-          style={{ color: "#FFFFFF", fontSize: "32px", opacity: "60%" }}
+          style={{ color: "#FFFFFF", fontSize: "20px", opacity: "60%" }}
           className="p-0 m-0"
         >
           Hammasini ko'rish
@@ -884,7 +874,7 @@ export const AboutKurs = () => {
       </div>
 
       <div className="text-center container-fluid mx-auto ">
-        <p style={{ fontSize: "48px" }} className="text-white">
+        <p style={{ fontSize: "32px" }} className="text-white">
           Foydalanuvchilarimizni biz haqimizdagi fikrlari
         </p>
         <Carousel
@@ -977,7 +967,7 @@ export const AboutKurs = () => {
       </div>
 
       <div className="row container-fluid mx-auto py-5 my-5">
-        <div className="col-lg-4">
+        <div className="col-lg-4 mb-3">
           <div
             className="text-center rounded-3 py-2"
             style={{ backgroundColor: "#272C33" }}
@@ -996,7 +986,7 @@ export const AboutKurs = () => {
             </p>
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 mb-3">
           <div
             className="text-center rounded-3 py-2"
             style={{ backgroundColor: "#272C33" }}
@@ -1015,7 +1005,7 @@ export const AboutKurs = () => {
             </p>
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 mb-3">
           <div
             className="text-center rounded-3 py-2"
             style={{ backgroundColor: "#272C33" }}

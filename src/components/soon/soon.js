@@ -17,13 +17,12 @@ import yonalish3 from "../image/yo'nalish3.png";
 import yonalish4 from "../image/yo'nalish4.png";
 import yonalish5 from "../image/yo'nalish5.png";
 import yonalish6 from "../image/yo'nalish6.png";
-import carousel from "../image/carousel.png"
+import carousel from "../image/carousel.png";
 import { Footer } from "../footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Carousel, Checkbox } from "antd";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 import { useState } from "react";
-
 
 export const Soon = () => {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -32,7 +31,7 @@ export const Soon = () => {
     <div className="bg-black">
       <Navbar />
       <div className="text-center">
-        <p style={{ fontSize: "100px" }} className="fw-bold text-white">
+        <p style={{ fontSize: "80px" }} className="fw-bold text-white">
           <span style={{ color: "#E32652" }}>TEZ KUNDA</span> InTimeda
         </p>
         <div
@@ -93,7 +92,7 @@ export const Soon = () => {
         <div className="col-lg-6">
           <div
             className="rounded position-relative mb-4"
-            style={{ backgroundColor: "black" }} 
+            style={{ backgroundColor: "black" }}
           >
             <img className="rounded w-100" src={soon1} />
             <div
@@ -460,388 +459,399 @@ export const Soon = () => {
       </div>
 
       <div className="d-flex align-items-end gap-4 mt-5 py-5">
-            <p
-              style={{ fontSize: "64px", color: "#FFFFFF" }}
-              className="p-0 m-0"
-            >
-              Ommabop
-            </p>
-            <p
-              style={{ color: "#FFFFFF", fontSize: "32px", opacity: "60%" }}
-              className="p-0 m-0"
-            >
-              Hammasini ko'rish
-            </p>
-          </div>
-          <div className="text-center">
-            <Swiper
-              slidesPerView={4}
-              spaceBetween={0}
-              freeMode={true}
-              pagination={{
-                clickable: true,
+        <p style={{ fontSize: "64px", color: "#FFFFFF" }} className="p-0 m-0">
+          Ommabop
+        </p>
+        <p
+          style={{ color: "#FFFFFF", fontSize: "20px", opacity: "60%" }}
+          className="p-0 m-0"
+        >
+          Hammasini ko'rish
+        </p>
+      </div>
+      {/* shuyerda */}
+      <div className="text-center">
+        <Swiper
+          // slidesPerView={4}
+          // spaceBetween={0}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
+          breakpoints={{
+            320 :{
+                slidesPerView:1,
+                spaceBetween:20
+            },
+            640 :{
+                slidesPerView:2,
+                spaceBetween:0
+            },
+            1024 :{
+                slidesPerView:3,
+                spaceBetween:0
+            },
+            1250: {
+                slidesPerView:4,
+                spaceBetween:0
+            }
+          }}
+        >
+          <SwiperSlide style={{ backgroundColor: "black" }}>
+            <div
+              style={{
+                width: "300px",
+                height: "579px",
+                borderRadius: "24px",
               }}
-              modules={[FreeMode, Pagination]}
-              className="mySwiper"
             >
-              <SwiperSlide style={{ backgroundColor: "black" }}>
-                <div
-                  style={{
-                    width: "300px",
-                    height: "579px",
-                    borderRadius: "24px",
-                  }}
-                >
-                  <img
-                    style={{ borderRadius: "12px, 12px, 0px, 0px" }}
-                    className="w-100"
-                    src={ommabop1}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide style={{ backgroundColor: "black" }}>
-                <div
-                  style={{
-                    width: "300px",
-                    height: "579px",
-                    borderRadius: "24px",
-                  }}
-                >
-                  <img
-                    style={{ borderRadius: "12px, 12px, 0px, 0px" }}
-                    className="w-100"
-                    src={ommabop2}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide style={{ backgroundColor: "black" }}>
-                <div
-                  style={{
-                    width: "300px",
-                    height: "579px",
-                    borderRadius: "24px",
-                  }}
-                >
-                  <img
-                    style={{ borderRadius: "12px, 12px, 0px, 0px" }}
-                    className="w-100"
-                    src={ommabop3}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide style={{ backgroundColor: "black" }}>
-                <div
-                  style={{
-                    width: "300px",
-                    height: "579px",
-                    borderRadius: "24px",
-                  }}
-                >
-                  <img
-                    style={{ borderRadius: "12px, 12px, 0px, 0px" }}
-                    className="w-100"
-                    src={ommabop4}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide style={{ backgroundColor: "black" }}>
-                <div
-                  style={{
-                    width: "300px",
-                    height: "579px",
-                    borderRadius: "24px",
-                  }}
-                >
-                  <img
-                    style={{ borderRadius: "12px, 12px, 0px, 0px" }}
-                    className="w-100"
-                    src={ommabop3}
-                  />
-                </div>
-              </SwiperSlide>
-            </Swiper>
-            <button
-              className="btn text-white my-5 "
-              style={{ fontSize: "18px", backgroundColor: "#272C33" }}
+              <img
+                style={{ borderRadius: "12px, 12px, 0px, 0px" }}
+                className="w-100"
+                src={ommabop1}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundColor: "black" }}>
+            <div
+              style={{
+                width: "300px",
+                height: "579px",
+                borderRadius: "24px",
+              }}
             >
-              KO'PROQ MA'LUMOT OLISH UCHUN
-            </button>
+              <img
+                style={{ borderRadius: "12px, 12px, 0px, 0px" }}
+                className="w-100"
+                src={ommabop2}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundColor: "black" }}>
+            <div
+              style={{
+                width: "300px",
+                height: "579px",
+                borderRadius: "24px",
+              }}
+            >
+              <img
+                style={{ borderRadius: "12px, 12px, 0px, 0px" }}
+                className="w-100"
+                src={ommabop3}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundColor: "black" }}>
+            <div
+              style={{
+                width: "300px",
+                height: "579px",
+                borderRadius: "24px",
+              }}
+            >
+              <img
+                style={{ borderRadius: "12px, 12px, 0px, 0px" }}
+                className="w-100"
+                src={ommabop4}
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ backgroundColor: "black" }}>
+            <div
+              style={{
+                width: "300px",
+                height: "579px",
+                borderRadius: "24px",
+              }}
+            >
+              <img
+                style={{ borderRadius: "12px, 12px, 0px, 0px" }}
+                className="w-100"
+                src={ommabop3}
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <button
+          className="btn text-white my-5 "
+          style={{ fontSize: "16px", backgroundColor: "#272C33" }}
+        >
+          KO'PROQ MA'LUMOT OLISH UCHUN
+        </button>
 
-            <p style={{ fontSize: "48px" }} className="text-white">
-              Bizning yo'nalishlarimiz bilan tanishing.
+        <p style={{ fontSize: "40px" }} className="text-white">
+          Bizning yo'nalishlarimiz bilan tanishing.
+        </p>
+        <p style={{ fontSize: "18px", opacity: "60%" }} className="text-white">
+          Qo'shimcha ma'lumot olish uchun sizni qiziqtirgan toifalarni tanlang.
+        </p>
+
+        {/* <div className="row">
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                  style={{ width: "45px", height: "45px" }}
+                  src={yonalish1}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                   style={{ width: "45px", height: "45px" }}
+                  src={yonalish2}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                  style={{ width: "45px", height: "45px" }}
+                  src={yonalish3}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                   style={{ width: "45px", height: "45px" }}
+                  src={yonalish4}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                   style={{ width: "45px", height: "45px" }}
+                  src={yonalish5}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-12">
+            <div
+              style={{ border: "1px solid #525252" }}
+              className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
+            >
+              <div className="d-flex align-items-center gap-3 text-white">
+                <img
+                   style={{ width: "45px", height: "45px" }}
+                  src={yonalish6}
+                />
+                <p style={{ fontSize: "24px" }} className="p-0 m-0">
+                  Ovqat
+                </p>
+              </div>
+              <Checkbox />
+            </div>
+          </div>
+        </div> */}
+      </div>
+      {/* shuyerda */}
+      <div className="text-center container-fluid mx-auto ">
+        <p style={{ fontSize: "36px" }} className="text-white">
+          Foydalanuvchilarimizni biz haqimizdagi fikrlari
+        </p>
+        <Carousel
+          className="text-center my-5 w-100"
+          arrows
+          infinite={false}
+          style={{ textAlign: "center" }}
+        >
+          <div className="d-flex align-items-center justify-content-center">
+            <div
+              style={{
+                width: "385px",
+                backgroundColor: "#272C33",
+                zIndex: "1",
+              }}
+              className="p-2 px-5 rounded"
+            >
+              <p className="text-white">
+                Men Timbalend va Natali Portmandan juda ko'p narsalarni
+                o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
+                bularni endi haqiqatan ham qila oladiganga o'xshayabman.
+              </p>
+              <p className="text-white text-start">
+                Robert{" "}
+                <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
+              </p>
+            </div>
+            <div
+              style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
+              className=""
+            >
+              <img className="w-100" src={carousel} />
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center justify-content-center">
+            <div
+              style={{
+                width: "305px",
+                backgroundColor: "#272C33",
+                zIndex: "1",
+              }}
+              className="p-2 rounded"
+            >
+              <p className="text-white">
+                Men Timbalend va Natali Portmandan juda ko'p narsalarni
+                o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
+                bularni endi haqiqatan ham qila oladiganga o'xshayabman.
+              </p>
+              <p className="text-white text-start">
+                Robert{" "}
+                <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
+              </p>
+            </div>
+            <div
+              style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
+              className=""
+            >
+              <img className="w-100" src={carousel} />
+            </div>
+          </div>
+
+          <div className="d-flex align-items-center justify-content-center">
+            <div
+              style={{
+                width: "305px",
+                backgroundColor: "#272C33",
+                zIndex: "1",
+              }}
+              className="p-2 rounded"
+            >
+              <p className="text-white">
+                Men Timbalend va Natali Portmandan juda ko'p narsalarni
+                o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
+                bularni endi haqiqatan ham qila oladiganga o'xshayabman.
+              </p>
+              <p className="text-white text-start">
+                Robert{" "}
+                <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
+              </p>
+            </div>
+            <div
+              style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
+              className=""
+            >
+              <img className="w-100" src={carousel} />
+            </div>
+          </div>
+        </Carousel>
+      </div>
+      <div className="row container-fluid mx-auto py-5 my-5">
+        <div className="col-lg-4 mb-3">
+          <div
+            className="text-center rounded-3 py-2"
+            style={{ backgroundColor: "#272C33" }}
+          >
+            <p
+              className="p-0 m-0 fw-bold"
+              style={{ color: "#FFFFFF", fontSize: "32px" }}
+            >
+              150+ kurslar
             </p>
             <p
-              style={{ fontSize: "24px", opacity: "60%" }}
-              className="text-white"
+              className="p-0 m-0"
+              style={{ color: "#FFFFFF", fontSize: "14px" }}
             >
-              Qo'shimcha ma'lumot olish uchun sizni qiziqtirgan toifalarni
-              tanlang.
+              Dunyodagi eng yaxshi ustozlardan
             </p>
-
-            <div className="row my-5">
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish1}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish2}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish3}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish4}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish5}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div
-                  style={{ border: "1px solid #525252" }}
-                  className="d-flex align-items-center justify-content-between rounded p-2 mb-3"
-                >
-                  <div className="d-flex align-items-center gap-3 text-white">
-                    <img
-                      style={{ width: "56px", height: "56px" }}
-                      src={yonalish6}
-                    />
-                    <p style={{ fontSize: "32px" }} className="p-0 m-0">
-                      Ovqat
-                    </p>
-                  </div>
-                  <Checkbox />
-                </div>
-              </div>
-            </div>
           </div>
-
-        <div className="text-center container-fluid mx-auto ">
-          <p style={{ fontSize: "48px" }} className="text-white">
-            Foydalanuvchilarimizni biz haqimizdagi fikrlari
-          </p>
-          <Carousel
-            className="text-center my-5"
-            arrows
-            infinite={false}
-            style={{ textAlign: "center" }}
+        </div>
+        <div className="col-lg-4 mb-3">
+          <div
+            className="text-center rounded-3 py-2"
+            style={{ backgroundColor: "#272C33" }}
           >
-            <div className="d-flex align-items-center justify-content-center">
-              <div
-                style={{
-                  width: "385px",
-                  backgroundColor: "#272C33",
-                  zIndex: "1",
-                }}
-                className="p-2 px-5 rounded"
-              >
-                <p className="text-white">
-                  Men Timbalend va Natali Portmandan juda ko'p narsalarni
-                  o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
-                  bularni endi haqiqatan ham qila oladiganga o'xshayabman.
-                </p>
-                <p className="text-white text-start">
-                  Robert{" "}
-                  <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
-                </p>
-              </div>
-              <div
-                style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
-                className=""
-              >
-                <img className="w-100" src={carousel} />
-              </div>
-            </div>
-
-            <div className="d-flex align-items-center justify-content-center">
-              <div
-                style={{
-                  width: "305px",
-                  backgroundColor: "#272C33",
-                  zIndex: "1",
-                }}
-                className="p-2 rounded"
-              >
-                <p className="text-white">
-                  Men Timbalend va Natali Portmandan juda ko'p narsalarni
-                  o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
-                  bularni endi haqiqatan ham qila oladiganga o'xshayabman.
-                </p>
-                <p className="text-white text-start">
-                  Robert{" "}
-                  <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
-                </p>
-              </div>
-              <div
-                style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
-                className=""
-              >
-                <img className="w-100" src={carousel} />
-              </div>
-            </div>
-
-            <div className="d-flex align-items-center justify-content-center">
-              <div
-                style={{
-                  width: "305px",
-                  backgroundColor: "#272C33",
-                  zIndex: "1",
-                }}
-                className="p-2 rounded"
-              >
-                <p className="text-white">
-                  Men Timbalend va Natali Portmandan juda ko'p narsalarni
-                  o'rgandim. Bu menga bu imkoniyat eshigini ochib berdi. Men
-                  bularni endi haqiqatan ham qila oladiganga o'xshayabman.
-                </p>
-                <p className="text-white text-start">
-                  Robert{" "}
-                  <span style={{ opacity: "60%" }}>O'zbekiston Toshkent</span>
-                </p>
-              </div>
-              <div
-                style={{ width: "200px", height: "250px", marginLeft: "-30px" }}
-                className=""
-              >
-                <img className="w-100" src={carousel} />
-              </div>
-            </div>
-          </Carousel>
-        </div>
-
-        <div className="row container-fluid mx-auto py-5 my-5">
-          <div className="col-lg-4">
-            <div
-              className="text-center rounded-3 py-2"
-              style={{ backgroundColor: "#272C33" }}
+            <p
+              className="p-0 m-0 fw-bold"
+              style={{ color: "#FFFFFF", fontSize: "32px" }}
             >
-              <p
-                className="p-0 m-0 fw-bold"
-                style={{ color: "#FFFFFF", fontSize: "32px" }}
-              >
-                150+ kurslar
-              </p>
-              <p
-                className="p-0 m-0"
-                style={{ color: "#FFFFFF", fontSize: "14px" }}
-              >
-                Dunyodagi eng yaxshi ustozlardan
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div
-              className="text-center rounded-3 py-2"
-              style={{ backgroundColor: "#272C33" }}
+              20 daqiqa
+            </p>
+            <p
+              className="p-0 m-0"
+              style={{ color: "#FFFFFF", fontSize: "14px" }}
             >
-              <p
-                className="p-0 m-0 fw-bold"
-                style={{ color: "#FFFFFF", fontSize: "32px" }}
-              >
-                20 daqiqa
-              </p>
-              <p
-                className="p-0 m-0"
-                style={{ color: "#FFFFFF", fontSize: "14px" }}
-              >
-                Har bir dars uchun o'rtacha
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div
-              className="text-center rounded-3 py-2"
-              style={{ backgroundColor: "#272C33" }}
-            >
-              <p
-                className="p-0 m-0 fw-bold"
-                style={{ color: "#FFFFFF", fontSize: "32px" }}
-              >
-                20 ta dars
-              </p>
-              <p
-                className="p-0 m-0"
-                style={{ color: "#FFFFFF", fontSize: "14px" }}
-              >
-                Har bir kurs uchun o'rtacha
-              </p>
-            </div>
+              Har bir dars uchun o'rtacha
+            </p>
           </div>
         </div>
-        <Footer />
+        <div className="col-lg-4 mb-3">
+          <div
+            className="text-center rounded-3 py-2"
+            style={{ backgroundColor: "#272C33" }}
+          >
+            <p
+              className="p-0 m-0 fw-bold"
+              style={{ color: "#FFFFFF", fontSize: "32px" }}
+            >
+              20 ta dars
+            </p>
+            <p
+              className="p-0 m-0"
+              style={{ color: "#FFFFFF", fontSize: "14px" }}
+            >
+              Har bir kurs uchun o'rtacha
+            </p>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

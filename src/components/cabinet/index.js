@@ -7,11 +7,11 @@ import person3 from "../image/person3.png";
 import { useState } from "react";
 import { DatePicker, Input, Radio, Select } from "antd";
 import { Option } from "antd/es/mentions";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { useNavigate } from "react-router";
 export const Cabinet = () => {
   const [active, setActive] = useState(1);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const StyledRadio = styled(Radio)`
     .ant-radio-inner {
       border-color: #e32652;
@@ -28,11 +28,18 @@ export const Cabinet = () => {
   `;
 
   return (
-    <>
-      <div style={{ backgroundColor: "#000000" }} className="bg-black">
+    <div>
+      <div  className="bg-black">
         <div className="container-fluid">
           <div className="d-flex align-items-center justify-content-between">
-            <img  onClick={() => {navigate("/")}} style={{cursor:"pointer"}} src={logo} alt="#" />
+            <img
+              onClick={() => {
+                navigate("/");
+              }}
+              style={{ cursor: "pointer" }}
+              src={logo}
+              alt="#"
+            />
             <div className="d-flex align-items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -249,8 +256,11 @@ export const Cabinet = () => {
           </div>
         </div>
       ) : active === 2 ? (
-        <div style={{ backgroundColor: "#FFFFF2" }} className="">
-          <div className="container-fluid mx-auto">
+        <div style={{ backgroundColor: "#FFFFF2", height:'100%' }} className="">
+          <div
+            className="container-fluid mx-auto d-flex justify-content-between flex-column h-100"
+            style={{ height: "" }}
+          >
             <p className="pt-4" style={{ fontSize: "48px" }}>
               Asosiy ma'lumotlar
             </p>
@@ -276,17 +286,17 @@ export const Cabinet = () => {
               </div>
               <div className="col-lg-6">
                 <div
-                  className="d-flex flex-column h-100"
+                  className="d-flex flex-column mt-3"
                   style={{ gap: "32px" }}
                 >
                   <Select
                     placeholder="O'zbek"
-                    style={{ width: "100%", color: "transparent" }}
+                    style={{ width: "100%" }}
                     className="bg-transparent"
                   >
-                    <Option>O'zbek</Option>
-                    <Option>Rus</Option>
-                    <Option>Ingliz</Option>
+                    <Option>Uz</Option>
+                    <Option>Ru</Option>
+                    <Option>Eng</Option>
                   </Select>
 
                   <div>
@@ -309,11 +319,10 @@ export const Cabinet = () => {
                 </div>
               </div>
             </div>
-
-            <div className="text-end pt-5">
+            <div className="text-end py-3">
               <button
                 style={{ background: "#E32652" }}
-                className="btn text-white "
+                className="btn text-white"
               >
                 SAQLASH
               </button>
@@ -323,6 +332,6 @@ export const Cabinet = () => {
       ) : (
         <h1> Malumot yo'q</h1>
       )}
-    </>
+    </div>
   );
 };
